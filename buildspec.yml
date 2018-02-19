@@ -4,6 +4,7 @@ phases:
   pre_build:
     commands:
       - echo "Running tests"
+      - go get -u github.com/synoa/helloworld
       - go test
   build:
     commands:
