@@ -10,10 +10,10 @@ phases:
     commands:
       - echo Build started on `date`
       - echo Compiling the Go code...
-      - go build hello.go 
+      - go build cmd/main.go
   post_build:
     commands:
       - echo Build completed on `date`
 artifacts:
   files:
-    - hello
+    - main
