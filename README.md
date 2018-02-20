@@ -9,5 +9,11 @@ $ go test
 ## Build
 
 ```
-$ go build
+$ go build cmd/main.go
+```
+
+## Build docker image
+
+```
+$ go build cmd/main.go && docker build -t synoa/helloworld-go .
 ```
