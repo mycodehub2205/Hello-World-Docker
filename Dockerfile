@@ -2,7 +2,6 @@
 FROM golang:1.9 as builder
 ## Add dependencies
 RUN go get -d -v golang.org/x/net/html
-RUN go get -d -v golang.org/x/log
 RUN go get -u github.com/synoa/helloworld
 
 WORKDIR /go/src/github.com/synoa/helloworld/.
